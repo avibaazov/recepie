@@ -1,37 +1,31 @@
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+
     private var recipes: [Recipe] = []
     private let recipeManager = RecipeManager()
-    private var sampleRecipes: [Recipe] = [
-            Recipe(title: "Spaghetti Carbonara", ingredients: ["Spaghetti", "Eggs", "Parmesan Cheese", "Bacon"], instructions: "Boil pasta. Cook bacon. Mix eggs and cheese. Combine all.", cookTime: 20, servings: 4),
-            Recipe(title: "Chicken Curry", ingredients: ["Chicken", "Curry Powder", "Coconut Milk", "Onions"], instructions: "Cook chicken. Add onions and curry. Pour coconut milk and simmer.", cookTime: 30, servings: 4),
-            Recipe(title: "Caesar Salad", ingredients: ["Lettuce", "Croutons", "Caesar Dressing", "Parmesan Cheese"], instructions: "Toss lettuce with dressing. Add croutons and cheese.", cookTime: 10, servings: 2)
-        ]
-    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-                // Load recipes from local storage or use sample data if empty
-                recipes = recipeManager.loadRecipes()
-                if recipes.isEmpty {
-                    recipes = sampleRecipes
-                    recipeManager.saveRecipes(recipes)
-                }
+        loadRecipes()
 
-                tableView.dataSource = self
-                tableView.delegate = self
-                tableView.reloadData()
-
-                setupNavigationBar()
-    }
-
-    private func setupTableView() {
-        // No need to set frame or addSubview; handled by storyboard
         tableView.dataSource = self
         tableView.delegate = self
+    }
+
+    private func loadRecipes() {
+        recipeManager.loadRecipes { [weak self] recipes, error in
+            if let error = error {
+                self?.showAlert(message: "Failed to load recipes: \(error.localizedDescription)")
+            } else if let recipes = recipes {
+                self?.recipes = recipes
+                self?.tableView.reloadData()
+            }
+        }
     }
 
     private func setupNavigationBar() {
@@ -40,10 +34,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     @objc private func addSampleRecipe() {
-        let newRecipe = Recipe(title: "Sample Recipe", ingredients: ["Ingredient 1", "Ingredient 2"], instructions: "Mix all ingredients", cookTime: 30, servings: 2)
-        recipes.append(newRecipe)
-        recipeManager.saveRecipes(recipes)
-        tableView.reloadData()
+        let newRecipe = Recipe(title: "New Sample Recipe", ingredients: ["Ingredient 1", "Ingredient 2"], instructions: "Mix all ingredients", cookTime: 30, servings: 2)
+        recipeManager.saveRecipe(newRecipe) { [weak self] error in
+            if let error = error {
+                self?.showAlert(message: "Failed to save recipe: \(error.localizedDescription)")
+            } else {
+                self?.recipes.append(newRecipe)
+                self?.tableView.reloadData()
+            }
+        }
+    }
+
+    private func showAlert(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 
     // MARK: - UITableViewDataSource Methods
@@ -63,6 +68,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        // Implement recipe detail view here
+        showRecipeDetail(for: indexPath.row)
     }
+
+    private func showRecipeDetail(for index: Int) {
+        let recipe = recipes[index]
+        if let detailVC = storyboard?.instantiateViewController(withIdentifier: "RecipeDetailViewController") as? RecipeDetailViewController {
+            detailVC.recipe = recipe // Set the property directly
+            navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+
 }

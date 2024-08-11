@@ -21,8 +21,15 @@
 		FD446B4C2C68E7060096A589 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FD446B4B2C68E7060096A589 /* FirebaseAuth */; };
 		FD446B4E2C68E7060096A589 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FD446B4D2C68E7060096A589 /* FirebaseDatabase */; };
 		FD446B502C68E7060096A589 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FD446B4F2C68E7060096A589 /* FirebaseFirestore */; };
-		FD446B542C68EB260096A589 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD446B532C68EB260096A589 /* RegistrationViewController.swift */; };
-		FD446B562C68EB5E0096A589 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD446B552C68EB5E0096A589 /* LoginViewController.swift */; };
+		FD446B542C68EB260096A589 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD446B532C68EB260096A589 /* SignUpViewController.swift */; };
+		FD446B562C68EB5E0096A589 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD446B552C68EB5E0096A589 /* SignInViewController.swift */; };
+		FD446B582C68F06C0096A589 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD446B572C68F06C0096A589 /* RecipeDetailViewController.swift */; };
+		FD446B5A2C68F4630096A589 /* Main2Copy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD446B592C68F4630096A589 /* Main2Copy.storyboard */; };
+		FD446B5C2C68F4A40096A589 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD446B5B2C68F4A40096A589 /* Color.xcassets */; };
+		FD446B5E2C68F4C50096A589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD446B5D2C68F4C50096A589 /* Assets.xcassets */; };
+		FD446B602C68F88F0096A589 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD446B5F2C68F88F0096A589 /* WelcomeVC.swift */; };
+		FD446B622C6914C20096A589 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD446B612C6914C20096A589 /* GoogleService-Info.plist */; };
+		FD446B642C6915200096A589 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FD446B632C6915200096A589 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +65,14 @@
 		FD446B362C68CDBC0096A589 /* recepieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recepieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FD446B442C68D10E0096A589 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		FD446B462C68D3F20096A589 /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
-		FD446B532C68EB260096A589 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
-		FD446B552C68EB5E0096A589 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FD446B532C68EB260096A589 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FD446B552C68EB5E0096A589 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FD446B572C68F06C0096A589 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		FD446B592C68F4630096A589 /* Main2Copy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2Copy.storyboard; sourceTree = "<group>"; };
+		FD446B5B2C68F4A40096A589 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		FD446B5D2C68F4C50096A589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/Cuisiner-master/Cuisiner/Resources/Assets.xcassets"; sourceTree = "<group>"; };
+		FD446B5F2C68F88F0096A589 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		FD446B612C6914C20096A589 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +83,7 @@
 				FD446B4E2C68E7060096A589 /* FirebaseDatabase in Frameworks */,
 				FD446B4C2C68E7060096A589 /* FirebaseAuth in Frameworks */,
 				FD446B502C68E7060096A589 /* FirebaseFirestore in Frameworks */,
+				FD446B642C6915200096A589 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,13 +132,19 @@
 				FD446B152C68CDBB0096A589 /* SceneDelegate.swift */,
 				FD446B172C68CDBB0096A589 /* ViewController.swift */,
 				FD446B192C68CDBB0096A589 /* Main.storyboard */,
+				FD446B592C68F4630096A589 /* Main2Copy.storyboard */,
 				FD446B1C2C68CDBC0096A589 /* Assets.xcassets */,
+				FD446B5D2C68F4C50096A589 /* Assets.xcassets */,
 				FD446B1E2C68CDBC0096A589 /* LaunchScreen.storyboard */,
+				FD446B5B2C68F4A40096A589 /* Color.xcassets */,
 				FD446B212C68CDBC0096A589 /* Info.plist */,
+				FD446B612C6914C20096A589 /* GoogleService-Info.plist */,
+				FD446B5F2C68F88F0096A589 /* WelcomeVC.swift */,
 				FD446B442C68D10E0096A589 /* Recipe.swift */,
 				FD446B462C68D3F20096A589 /* RecipeManager.swift */,
-				FD446B532C68EB260096A589 /* RegistrationViewController.swift */,
-				FD446B552C68EB5E0096A589 /* LoginViewController.swift */,
+				FD446B532C68EB260096A589 /* SignUpViewController.swift */,
+				FD446B552C68EB5E0096A589 /* SignInViewController.swift */,
+				FD446B572C68F06C0096A589 /* RecipeDetailViewController.swift */,
 			);
 			path = recepie;
 			sourceTree = "<group>";
@@ -173,6 +193,7 @@
 				FD446B4B2C68E7060096A589 /* FirebaseAuth */,
 				FD446B4D2C68E7060096A589 /* FirebaseDatabase */,
 				FD446B4F2C68E7060096A589 /* FirebaseFirestore */,
+				FD446B632C6915200096A589 /* FirebaseFirestoreSwift */,
 			);
 			productName = recepie;
 			productReference = FD446B102C68CDBB0096A589 /* recepie.app */;
@@ -267,7 +288,11 @@
 			files = (
 				FD446B202C68CDBC0096A589 /* LaunchScreen.storyboard in Resources */,
 				FD446B1D2C68CDBC0096A589 /* Assets.xcassets in Resources */,
+				FD446B5C2C68F4A40096A589 /* Color.xcassets in Resources */,
 				FD446B1B2C68CDBB0096A589 /* Main.storyboard in Resources */,
+				FD446B5E2C68F4C50096A589 /* Assets.xcassets in Resources */,
+				FD446B5A2C68F4630096A589 /* Main2Copy.storyboard in Resources */,
+				FD446B622C6914C20096A589 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,11 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD446B562C68EB5E0096A589 /* LoginViewController.swift in Sources */,
-				FD446B542C68EB260096A589 /* RegistrationViewController.swift in Sources */,
+				FD446B562C68EB5E0096A589 /* SignInViewController.swift in Sources */,
+				FD446B542C68EB260096A589 /* SignUpViewController.swift in Sources */,
+				FD446B582C68F06C0096A589 /* RecipeDetailViewController.swift in Sources */,
 				FD446B182C68CDBB0096A589 /* ViewController.swift in Sources */,
 				FD446B472C68D3F20096A589 /* RecipeManager.swift in Sources */,
 				FD446B142C68CDBB0096A589 /* AppDelegate.swift in Sources */,
+				FD446B602C68F88F0096A589 /* WelcomeVC.swift in Sources */,
 				FD446B162C68CDBB0096A589 /* SceneDelegate.swift in Sources */,
 				FD446B452C68D10E0096A589 /* Recipe.swift in Sources */,
 			);
@@ -661,6 +688,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FD446B432C68CEC50096A589 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		FD446B632C6915200096A589 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD446B432C68CEC50096A589 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
