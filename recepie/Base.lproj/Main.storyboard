@@ -289,17 +289,6 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="250" id="0SU-ay-s1n"/>
                                                                 </constraints>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="15"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                                        <size key="value" width="20" height="20"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kws-b7-wnM">
                                                                 <rect key="frame" x="72.333333333333329" y="298.66666666666669" width="239.33333333333337" height="50"/>
@@ -415,7 +404,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="Ult-OY-Kbg" secondAttribute="trailing" id="R5H-59-BAp"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TIk-OG-oYd">
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TIk-OG-oYd" userLabel="Ingredients Table View">
                                                         <rect key="frame" x="0.0" y="378.66666666666669" width="384" height="200.00000000000006"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -468,11 +457,6 @@
                                         <state key="normal" title="Instructions">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -505,13 +489,10 @@
                     <size key="freeformSize" width="414" height="929"/>
                     <connections>
                         <outlet property="cookTimeLabel" destination="LQA-sD-LsS" id="HrD-A5-dAd"/>
-                        <outlet property="ingredientTable" destination="TIk-OG-oYd" id="EfY-qe-L0e"/>
-                        <outlet property="ingredientsTextView" destination="TIk-OG-oYd" id="ige-k7-1RR"/>
+                        <outlet property="ingredientsTableView" destination="TIk-OG-oYd" id="TCe-rY-5FH"/>
                         <outlet property="instructionsButton" destination="A2c-0W-x1j" id="ukC-mB-rZ2"/>
-                        <outlet property="recipeImage" destination="14X-bU-AJF" id="g3s-lO-wFc"/>
-                        <outlet property="recipeName" destination="Ult-OY-Kbg" id="omI-2z-xu2"/>
+                        <outlet property="recipeImageView" destination="14X-bU-AJF" id="bM7-5x-D39"/>
                         <outlet property="scrollView" destination="7lY-Tw-SOR" id="u5N-BL-qJk"/>
-                        <outlet property="serveLabel" destination="zRg-Yg-AHh" id="71N-3B-7iI"/>
                         <outlet property="servingsLabel" destination="zRg-Yg-AHh" id="c6u-AL-nGL"/>
                         <outlet property="titleLabel" destination="Ult-OY-Kbg" id="Hms-QU-oJb"/>
                     </connections>

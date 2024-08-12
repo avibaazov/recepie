@@ -8,7 +8,7 @@ class RecipeDetailViewController: UIViewController,UITableViewDataSource, UITabl
     @IBOutlet weak var ingredientsTableView: UITableView!
     @IBOutlet weak var instructionsButton: UIButton!
     @IBOutlet weak var cookTimeLabel: UILabel!
-   
+    @IBOutlet weak var recipeImageView: UIImageView!
     @IBOutlet weak var servingsLabel: UILabel!
 
     override func viewDidLoad() {
@@ -21,9 +21,20 @@ class RecipeDetailViewController: UIViewController,UITableViewDataSource, UITabl
                 instructionsButton.setTitle("Instructions", for: .normal)  // Assuming you have a button to show instructions
                 cookTimeLabel.text = "\(recipe.cookTime) mins"
                 servingsLabel.text = " \(recipe.servings) serve"
+                if let imageUrl = recipe.imageUrl, let url = URL(string: imageUrl) {
+                                loadRecipeImage(from: url)
+                            }
             }
         }
-        
+    private func loadRecipeImage(from url: URL) {
+            DispatchQueue.global().async {
+                if let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self.recipeImageView.image = image
+                    }
+                }
+            }
+        }
         private func configureTableView() {
             ingredientsTableView.dataSource = self
             ingredientsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "IngredientCell")
