@@ -7,9 +7,8 @@
 
 import Foundation
 
-
 struct Recipe: Identifiable, Codable {
-    var id: UUID
+    var id: String? = UUID().uuidString  // Optional id initialized as a String UUID
     var title: String
     var ingredients: [String]
     var instructions: String
@@ -17,7 +16,7 @@ struct Recipe: Identifiable, Codable {
     var cookTime: Int
     var servings: Int
 
-    init(id: UUID = UUID(), title: String, ingredients: [String], instructions: String, imageUrl: String? = nil, cookTime: Int, servings: Int) {
+    init(id: String? = UUID().uuidString, title: String, ingredients: [String], instructions: String, imageUrl: String? = nil, cookTime: Int, servings: Int) {
         self.id = id
         self.title = title
         self.ingredients = ingredients

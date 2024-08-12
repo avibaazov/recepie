@@ -35,7 +35,7 @@ class SignUpViewController: UIViewController {
 
     private func toHomeVC() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let homeVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as? ViewController {
+        if let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeVC") as? HomeVC {
             navigationController?.setViewControllers([homeVC], animated: true)
         }
     }

@@ -35,7 +35,7 @@ class WelcomeVC: UIViewController {
     // Navigate to the home screen programmatically
     func toHomeVC() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeVC") as? ViewController {
+        if let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeVC") as? HomeVC {
             navigationController?.setViewControllers([homeVC], animated: true)
         }
     }
