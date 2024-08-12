@@ -10,6 +10,7 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
         override func viewDidLoad() {
             super.viewDidLoad()
+        
             loadRecipes()
             tableView.dataSource = self
             tableView.delegate = self
@@ -64,7 +65,14 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             let recipe = recipes[index]
             if let detailVC = storyboard?.instantiateViewController(withIdentifier: "RecipeDetailViewController") as? RecipeDetailViewController {
                 detailVC.recipe = recipe // Set the property directly
+                print("i went thru here")
+                
                 navigationController?.pushViewController(detailVC, animated: true)
             }
         }
+    private func testNavigation() {
+        let testVC = UIViewController()
+        testVC.view.backgroundColor = .red  // So you can clearly see it
+        navigationController?.pushViewController(testVC, animated: true)
+    }
     }
