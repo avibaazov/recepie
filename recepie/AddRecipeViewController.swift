@@ -6,7 +6,7 @@
 //
 import UIKit
 import FirebaseFirestore
-
+import FirebaseAuth
 class AddRecipeViewController: UIViewController{
     
     @IBOutlet weak var RecipeName: UITextField!
@@ -40,9 +40,11 @@ class AddRecipeViewController: UIViewController{
               let imageUrl = ImageURL.text, !imageUrl.isEmpty,
               let servingsText = Servings.text, let servings = Int(servingsText),
               let cookTimeText = Minutes.text, let cookTime = Int(cookTimeText),
-              let ingredientsText = ingredientsTextView.text, !ingredientsText.isEmpty else {
+              let ingredientsText = ingredientsTextView.text, !ingredientsText.isEmpty,
+              let userId = Auth.auth().currentUser?.uid else {
             showAlert(message: "Please fill in all fields.")
             return
+            
         }
         
         let ingredientsArray = ingredientsText
@@ -51,6 +53,7 @@ class AddRecipeViewController: UIViewController{
             .filter { !$0.isEmpty }
         
         let newRecipe = Recipe(
+            userId: userId,
             title: name,
             ingredients: ingredientsArray,
             instructions: "", // Assuming instructions are not entered here

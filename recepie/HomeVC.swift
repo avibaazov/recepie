@@ -21,10 +21,20 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecipe))
     }
     @objc private func addRecipe() {
-        // Present a view controller to add a new recipe
-//        let addRecipeVC = AddRecipeViewController() // Assume you have a view controller for adding recipes
-//        navigationController?.pushViewController(addRecipeVC, animated: true)
+         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           
+           // Instantiate the view controller using its storyboard ID
+           if let addRecipeVC = storyboard.instantiateViewController(withIdentifier: "AddRecipeViewController") as? AddRecipeViewController {
+               navigationController?.pushViewController(addRecipeVC, animated: true)
+           }
     }
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          
+          // Refresh data every time the view appears
+          loadRecipes()
+      }
     
         private func loadRecipes() {
             recipeManager.loadRecipes { [weak self] recipes, error in
