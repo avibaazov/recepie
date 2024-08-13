@@ -14,8 +14,18 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             loadRecipes()
             tableView.dataSource = self
             tableView.delegate = self
+            setupNavigationBar()
         }
-
+    private func setupNavigationBar() {
+        navigationItem.title = "Recipes"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecipe))
+    }
+    @objc private func addRecipe() {
+        // Present a view controller to add a new recipe
+//        let addRecipeVC = AddRecipeViewController() // Assume you have a view controller for adding recipes
+//        navigationController?.pushViewController(addRecipeVC, animated: true)
+    }
+    
         private func loadRecipes() {
             recipeManager.loadRecipes { [weak self] recipes, error in
                 if let error = error {
