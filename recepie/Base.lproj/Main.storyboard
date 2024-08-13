@@ -17,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="leZ-32-z4o">
-                                <rect key="frame" x="46" y="242" width="301" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="leZ-32-z4o">
+                                <rect key="frame" x="46" y="329" width="301" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7f0-bH-0dA">
-                                <rect key="frame" x="46" y="306" width="301" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7f0-bH-0dA">
+                                <rect key="frame" x="46" y="393" width="301" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z40-aE-FDy">
-                                <rect key="frame" x="159" y="385" width="75" height="35"/>
+                                <rect key="frame" x="159" y="472" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="LOGIN"/>
                                 <connections>
@@ -37,11 +37,11 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zTI-oK-Bgc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="profileBackground"/>
                         <constraints>
                             <constraint firstItem="leZ-32-z4o" firstAttribute="leading" secondItem="p9D-zB-H3E" secondAttribute="leadingMargin" constant="30" id="0sU-Mc-WSm"/>
                             <constraint firstItem="Z40-aE-FDy" firstAttribute="top" secondItem="7f0-bH-0dA" secondAttribute="bottom" constant="45" id="I9g-gk-PDk"/>
-                            <constraint firstItem="leZ-32-z4o" firstAttribute="top" secondItem="p9D-zB-H3E" secondAttribute="topMargin" constant="183" id="MAA-8P-yug"/>
+                            <constraint firstItem="leZ-32-z4o" firstAttribute="top" secondItem="p9D-zB-H3E" secondAttribute="topMargin" constant="270" id="MAA-8P-yug"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7f0-bH-0dA" secondAttribute="trailing" constant="30" id="NRi-ZQ-MaD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="leZ-32-z4o" secondAttribute="trailing" constant="30" id="Nhw-Wh-fYd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z40-aE-FDy" secondAttribute="trailing" constant="143" id="TFX-cR-kXf"/>
@@ -68,17 +68,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vIv-G4-m4R">
-                                <rect key="frame" x="46" y="353" width="301" height="34"/>
+                                <rect key="frame" x="46" y="329" width="301" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQD-z0-7Fa">
-                                <rect key="frame" x="46" y="417" width="301" height="34"/>
+                                <rect key="frame" x="46" y="393" width="301" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIi-6T-EJq">
-                                <rect key="frame" x="154.66666666666666" y="486" width="84" height="35"/>
+                                <rect key="frame" x="154.66666666666666" y="462" width="84" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="SIGN IN"/>
                                 <connections>
@@ -87,7 +87,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fS5-ry-XZ8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="profileBackground"/>
                         <constraints>
                             <constraint firstItem="RIi-6T-EJq" firstAttribute="centerX" secondItem="jQD-z0-7Fa" secondAttribute="centerX" id="4Be-dM-wTs"/>
                             <constraint firstItem="jQD-z0-7Fa" firstAttribute="leading" secondItem="a4Q-Kq-l43" secondAttribute="leadingMargin" constant="30" id="4du-sL-2TZ"/>
@@ -95,7 +95,7 @@
                             <constraint firstItem="RIi-6T-EJq" firstAttribute="top" secondItem="jQD-z0-7Fa" secondAttribute="bottom" constant="35" id="7gD-V4-Ulg"/>
                             <constraint firstItem="jQD-z0-7Fa" firstAttribute="top" secondItem="vIv-G4-m4R" secondAttribute="bottom" constant="30" id="9So-yz-Bbb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vIv-G4-m4R" secondAttribute="trailing" constant="30" id="Qgv-hb-ffZ"/>
-                            <constraint firstItem="vIv-G4-m4R" firstAttribute="top" secondItem="a4Q-Kq-l43" secondAttribute="topMargin" constant="294" id="U64-lW-oI9"/>
+                            <constraint firstItem="vIv-G4-m4R" firstAttribute="top" secondItem="a4Q-Kq-l43" secondAttribute="topMargin" constant="270" id="U64-lW-oI9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jQD-z0-7Fa" secondAttribute="trailing" constant="30" id="vKN-Qv-0kx"/>
                         </constraints>
                     </view>
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RAb-28-9AB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-434" y="-693"/>
+            <point key="canvasLocation" x="-431" y="-677"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
@@ -136,8 +136,8 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recipe Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulS-Ty-spg">
-                                                    <rect key="frame" x="30" y="169" width="97" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="30" y="169" width="130.33333333333334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -779,6 +779,9 @@
         </namedColor>
         <namedColor name="gray">
             <color red="0.7839999794960022" green="0.75400000810623169" blue="0.77899998426437378" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="profileBackground">
+            <color red="1" green="0.89999997615814209" blue="0.89999997615814209" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="recipeBackground">
             <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

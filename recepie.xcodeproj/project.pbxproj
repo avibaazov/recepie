@@ -32,7 +32,6 @@
 		FD5F201C2C6A779F00CCE50A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5F201B2C6A779F00CCE50A /* Assets.xcassets */; };
 		FD5F201E2C6A83EA00CCE50A /* IngredientPresentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F201D2C6A83EA00CCE50A /* IngredientPresentCell.swift */; };
 		FD5F20202C6A85F200CCE50A /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F201F2C6A85F200CCE50A /* Ingredient.swift */; };
-		FDDE021C2C6A1D0C001152EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDE021B2C6A1D0C001152EE /* Assets.xcassets */; };
 		FDDE021E2C6A2DFF001152EE /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE021D2C6A2DFF001152EE /* RecipeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +78,6 @@
 		FD5F201B2C6A779F00CCE50A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5F201D2C6A83EA00CCE50A /* IngredientPresentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientPresentCell.swift; sourceTree = "<group>"; };
 		FD5F201F2C6A85F200CCE50A /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
-		FDDE021B2C6A1D0C001152EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/Cuisiner-master/Cuisiner/Resources/Assets.xcassets"; sourceTree = "<group>"; };
 		FDDE021D2C6A2DFF001152EE /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,7 +142,6 @@
 				FD446B192C68CDBB0096A589 /* Main.storyboard */,
 				FD446B592C68F4630096A589 /* Main2Copy.storyboard */,
 				FD446B1E2C68CDBC0096A589 /* LaunchScreen.storyboard */,
-				FDDE021B2C6A1D0C001152EE /* Assets.xcassets */,
 				FD446B5B2C68F4A40096A589 /* Color.xcassets */,
 				FD446B212C68CDBC0096A589 /* Info.plist */,
 				FD446B612C6914C20096A589 /* GoogleService-Info.plist */,
@@ -301,7 +298,6 @@
 				FD446B202C68CDBC0096A589 /* LaunchScreen.storyboard in Resources */,
 				FD446B5C2C68F4A40096A589 /* Color.xcassets in Resources */,
 				FD446B1B2C68CDBB0096A589 /* Main.storyboard in Resources */,
-				FDDE021C2C6A1D0C001152EE /* Assets.xcassets in Resources */,
 				FD5F201C2C6A779F00CCE50A /* Assets.xcassets in Resources */,
 				FD446B5A2C68F4630096A589 /* Main2Copy.storyboard in Resources */,
 				FD446B622C6914C20096A589 /* GoogleService-Info.plist in Resources */,
