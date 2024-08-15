@@ -24,7 +24,6 @@
 		FD446B542C68EB260096A589 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD446B532C68EB260096A589 /* SignUpViewController.swift */; };
 		FD446B562C68EB5E0096A589 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD446B552C68EB5E0096A589 /* SignInViewController.swift */; };
 		FD446B582C68F06C0096A589 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD446B572C68F06C0096A589 /* RecipeDetailViewController.swift */; };
-		FD446B5A2C68F4630096A589 /* Main2Copy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD446B592C68F4630096A589 /* Main2Copy.storyboard */; };
 		FD446B5C2C68F4A40096A589 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD446B5B2C68F4A40096A589 /* Color.xcassets */; };
 		FD446B602C68F88F0096A589 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD446B5F2C68F88F0096A589 /* WelcomeVC.swift */; };
 		FD446B622C6914C20096A589 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD446B612C6914C20096A589 /* GoogleService-Info.plist */; };
@@ -71,7 +70,6 @@
 		FD446B532C68EB260096A589 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FD446B552C68EB5E0096A589 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FD446B572C68F06C0096A589 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
-		FD446B592C68F4630096A589 /* Main2Copy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2Copy.storyboard; sourceTree = "<group>"; };
 		FD446B5B2C68F4A40096A589 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		FD446B5F2C68F88F0096A589 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		FD446B612C6914C20096A589 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				FD5F201F2C6A85F200CCE50A /* Ingredient.swift */,
 				FD5F201B2C6A779F00CCE50A /* Assets.xcassets */,
 				FD446B192C68CDBB0096A589 /* Main.storyboard */,
-				FD446B592C68F4630096A589 /* Main2Copy.storyboard */,
 				FD446B1E2C68CDBC0096A589 /* LaunchScreen.storyboard */,
 				FD446B5B2C68F4A40096A589 /* Color.xcassets */,
 				FD446B212C68CDBC0096A589 /* Info.plist */,
@@ -299,7 +296,6 @@
 				FD446B5C2C68F4A40096A589 /* Color.xcassets in Resources */,
 				FD446B1B2C68CDBB0096A589 /* Main.storyboard in Resources */,
 				FD5F201C2C6A779F00CCE50A /* Assets.xcassets in Resources */,
-				FD446B5A2C68F4630096A589 /* Main2Copy.storyboard in Resources */,
 				FD446B622C6914C20096A589 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

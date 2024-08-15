@@ -21,6 +21,7 @@ class RecipeTableViewCell: UITableViewCell {
                recipeImageView.image = UIImage(systemName: "photo")
            }
        }
+       
 }
 
 extension UIImageView {
