@@ -10,22 +10,16 @@ MyRecipe is an iOS application that allows users to create, save, and view vario
 - **Navigation**: Seamlessly navigate between different sections of the app with an intuitive interface.
 - **Firebase Integration**: All recipes are stored and retrieved from Firebase Firestore, ensuring data is persistent and secure.
 
-## Screenshots
+### Screenshots
 
-### Home Screen
-![Home Screen](https://github.com/user-attachments/assets/41b61491-6be4-499b-922c-74328a38b94e)
+| Welcome | Log In/Sign Up  | HomeScreen |
+|:-----------:|:-----------:|:----------:|
+| ![](https://github.com/user-attachments/assets/41b61491-6be4-499b-922c-74328a38b94e) | ![](https://github.com/user-attachments/assets/6ee806b4-0c1c-4adc-8590-ff10169bf0cf) | ![](https://github.com/user-attachments/assets/4e1a0d27-35ef-45f2-b2c5-caea018bc10e) |
 
-### Recipe List
-![Recipe List](https://github.com/user-attachments/assets/6ee806b4-0c1c-4adc-8590-ff10169bf0cf)
+| Recipe Details | Add new recipe |
+|:--------------:|:--------------:|
+| ![](https://github.com/user-attachments/assets/ae0cd4ba-cde1-400a-bcb2-8ca83fd69efc) | ![](https://github.com/user-attachments/assets/d8ad1378-4659-45e6-97d0-cfcb78de3602) |
 
-### Add Recipe
-![Add Recipe](https://github.com/user-attachments/assets/4e1a0d27-35ef-45f2-b2c5-caea018bc10e)
-
-### Recipe Details
-![Recipe Details](https://github.com/user-attachments/assets/ae0cd4ba-cde1-400a-bcb2-8ca83fd69efc)
-
-### Log In/Sign Up
-![Log In/Sign Up](https://github.com/user-attachments/assets/d8ad1378-4659-45e6-97d0-cfcb78de3602)
 
 
 ## Installation
