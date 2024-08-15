@@ -27,7 +27,7 @@ MyRecipe is an iOS application that allows users to create, save, and view vario
  Clone the repository:
 
    ```
-   git clone https://github.com/avibaazov/recepie.git)
+   git clone https://github.com/avibaazov/recepie.git
 ```
 ## Usage
 
