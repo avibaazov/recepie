@@ -12,8 +12,20 @@ MyRecipe is an iOS application that allows users to create, save, and view vario
 
 ## Screenshots
 
-*Include screenshots of your app here to visually showcase the main features.*
+### Home Screen
+![Home Screen](https://github.com/user-attachments/assets/41b61491-6be4-499b-922c-74328a38b94e)
 
+### Recipe List
+![Recipe List](https://github.com/user-attachments/assets/6ee806b4-0c1c-4adc-8590-ff10169bf0cf)
+
+### Add Recipe
+![Add Recipe](https://github.com/user-attachments/assets/4e1a0d27-35ef-45f2-b2c5-caea018bc10e)
+
+### Recipe Details
+![Recipe Details](https://github.com/user-attachments/assets/ae0cd4ba-cde1-400a-bcb2-8ca83fd69efc)
+
+### Log In/Sign Up
+![Log In/Sign Up](https://github.com/user-attachments/assets/d8ad1378-4659-45e6-97d0-cfcb78de3602)
 
 
 ## Installation
